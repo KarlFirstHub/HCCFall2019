@@ -1,0 +1,69 @@
+https://github.com/KarlFirstHub/HCCFall2019.git
+
+using windows explorer, create a folder, navigate into it
+
+right click, Start Git Bash Here
+
+git clone https://github.com/KarlFirstHub/HCCFall2019.git
+
+cd HCCFall2019
+
+ls
+
+create Feature1
+	git branch Feature1
+Create Feature2
+
+	git branch Feature2
+List all branches
+	git branch -a
+work on feature1
+	in Notpad add a line to file usedByBoth.txt
+	save
+        delete file deleteinFeature1
+check status
+  	git ststus
+add to branch
+	git add .
+commit work
+	git commit -m "initial work on feature1"
+check status
+	git status
+look at files in File Manager
+	switch to Feature2
+	git checkout feature2
+look at files in File manager
+	Delete DeleteInFeature2.txt
+	
+in notepad, edit Used-By_both.txt. add a line at bottom, save
+
+check status
+	git status
+add files to branch
+	git add .
+commit files to branch
+	git commit -m "initial creation of feature2"
+go to master
+	git checkout master
+look at files in File manager
+
+Merge Feature1 into Master
+	git merge Feature1
+Merge Feature2 into master
+	git merge Feature2
+
+*** problem - Feature 1 cannot be put into Production- you must back it out *****
+
+	
+look at all commits
+	git log
+copy that long funny number
+
+revert back in time 
+	git reset --hard 9467bd6707f8226c8104f1dd72dd241a9be2ce91 
+look at File manager
+	
+Just merger feature2
+	git merge
+
+	
